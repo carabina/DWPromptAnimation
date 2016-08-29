@@ -1,0 +1,13 @@
+//
+//  TestViewController.h
+//  DWPromptAnimationTest
+//
+//  Created by dwang_sui on 16/8/26.
+//  Copyright © 2016年 dwang_sui. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface TestViewController : UIViewController
+
+@end
