@@ -3,7 +3,7 @@
 #加载等待视图
 ##允许自定义蒙板与动画视图，内置7种加载模式与14种自定义GIF加载动画,如果内置的7种无法满足您的需求，可以使用自定义中的GIF图。
 #当然也支持您自己的序列帧与GIF
-
+![image](https://github.com/dwanghello/DWPromptAnimation/blob/master/DWPromptAnimation.gif)
 ---
 #Cocoapods
 ###platform :ios, '8.0'
