@@ -5,7 +5,10 @@
 #当然也支持您自己的序列帧与GIF
 
 ---
-
+#Cocoapods
+###platform :ios, '8.0'
+###pod 'DWPromptAnimation'
+---
 ####导入ImageIO.framework库
 ####在需要使用的地方导入头文件
 	#import "DWPromptAnimation.h"
@@ -20,7 +23,11 @@
  	 *  @param imageType  图片类型/png、jpg
  	 *  @param maskView   是否显示蒙板
  	 */
-	+ (void)dw_ShowPromptAnimation:(UIView *)view imageName:(NSString *)imageNames imageCount:(int)imageCount imageType:(NSString *)imageType maskView:(BOOL)maskView;
+	+ (void)dw_ShowPromptAnimation:(UIView *)view 
+			imageName:(NSString *)imageNames 
+			imageCount:(int)imageCount 
+			imageType:(NSString *)imageType 
+			maskView:(BOOL)maskView;
 	
 ---
 	/**
@@ -31,7 +38,10 @@
 	 *  @param imageCount 图片总量，最大为99
  	 *  @param imageType  图片类型/png、jpg
 	 */
-	- (void)dw_ShowPromptAnimation:(UIView *)view imageName:(NSString *)imageNames imageCount:(int)imageCount imageType:(NSString *)imageType;
+	- (void)dw_ShowPromptAnimation:(UIView *)view 
+			imageName:(NSString *)imageNames 
+			imageCount:(int)imageCount 
+			imageType:(NSString *)imageType;
 	
 ---
 	/**
