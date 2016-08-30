@@ -253,6 +253,10 @@ UIView *animationPicturesView;
         
         animationPictures = [[UIImageView alloc] initWithFrame:self.animationPicturesRect];
         
+        animationPictures.layer.cornerRadius = animationPictures.frame.size.width / 2;
+        
+        animationPictures.clipsToBounds = self.clipsToBounds;
+        
     }else {
         
         animationPictures = [[UIImageView alloc] initWithFrame:CGRectMake(animationPicturesView.center.x-animationPicturesView.frame.size.width/number, animationPicturesView.center.y-animationPicturesView.frame.size.width/number, animationPicturesView.frame.size.width/2, animationPicturesView.frame.size.width/2)];
@@ -374,6 +378,10 @@ UIView *animationPicturesView;
         
         animationPictures = [[UIImageView alloc] initWithFrame:self.animationPicturesRect];
         
+        animationPictures.layer.cornerRadius = animationPictures.frame.size.width / 2;
+        
+        animationPictures.clipsToBounds = self.clipsToBounds;
+        
     }else {
         
         animationPictures = [[UIImageView alloc] initWithFrame:CGRectMake(animationPicturesView.center.x-animationPicturesView.frame.size.width/number, animationPicturesView.center.y-animationPicturesView.frame.size.width/number, animationPicturesView.frame.size.width/2, animationPicturesView.frame.size.width/2)];
@@ -473,6 +481,10 @@ UIView *animationPicturesView;
     if (self.animationPicturesRect.size.width) {
         
         animationPictures = [[UIImageView alloc] initWithFrame:self.animationPicturesRect];
+        
+        animationPictures.layer.cornerRadius = animationPictures.frame.size.width / 2;
+        
+        animationPictures.clipsToBounds = self.clipsToBounds;
         
     }else {
     
