@@ -207,9 +207,15 @@
     }
     if (indexPath.row == 10) {
         
-        self.animation.alpha = 0.8;
+        self.animation.animationPicturesViewColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.8];
         
         self.animation.animationDuration = 0.1;
+        
+        self.animation.promptWords = @"我是提示文字!!!";
+        
+        self.animation.textColor = [UIColor blackColor];
+        
+        self.animation.font = 23;
         
         [self.animation dw_ShowPromptAnimation:self.view SequenceSources:sequence4];
         

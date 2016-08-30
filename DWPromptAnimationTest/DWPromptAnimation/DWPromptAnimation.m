@@ -17,7 +17,7 @@ UIView *animationPicturesView;
 
 @implementation DWPromptAnimation
 
-#pragma mark ---
+#pragma mark ---自定义序列帧动画／无法修改属性
 + (void)dw_ShowPromptAnimation:(UIView *)view imageName:(NSString *)imageNames imageCount:(int)imageCount imageType:(NSString *)imageType maskView:(BOOL)maskView {
     
     animationPicturesView = [[UIView alloc] initWithFrame:view.frame];;
@@ -126,6 +126,44 @@ UIView *animationPicturesView;
     }
     
     [animationPicturesView addSubview:animationPictures];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    
+    label.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    label.numberOfLines = 0;
+    
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    if (self.textColor) {
+        
+        label.textColor = self.textColor;
+        
+    }else {
+        
+        label.textColor = [UIColor blackColor];
+        
+    }
+    
+    label.text = self.promptWords;
+    
+    if (self.font) {
+        
+        label.font = [UIFont systemFontOfSize:self.font];
+        
+    }else {
+        
+        label.font = [UIFont systemFontOfSize:23];
+        
+    }
+    
+    [label sizeToFit];
+    
+    [animationPicturesView addSubview:label];
+    
+    [animationPicturesView addConstraint:[NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:animationPictures attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0]];
+    
+    [animationPicturesView addConstraint:[NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:animationPictures attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
     
     [view addSubview:animationPicturesView];
     
@@ -289,6 +327,44 @@ UIView *animationPicturesView;
     }
     
     [animationPicturesView addSubview:animationPictures];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    
+    label.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    label.numberOfLines = 0;
+    
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    if (self.textColor) {
+        
+        label.textColor = self.textColor;
+        
+    }else {
+    
+    label.textColor = [UIColor blackColor];
+    
+    }
+    
+    label.text = self.promptWords;
+    
+    if (self.font) {
+        
+        label.font = [UIFont systemFontOfSize:self.font];
+        
+    }else {
+        
+        label.font = [UIFont systemFontOfSize:23];
+        
+    }
+    
+    [label sizeToFit];
+    
+    [animationPicturesView addSubview:label];
+    
+    [animationPicturesView addConstraint:[NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:animationPictures attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0]];
+    
+    [animationPicturesView addConstraint:[NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:animationPictures attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
     
     [view addSubview:animationPicturesView];
     
@@ -454,6 +530,45 @@ UIView *animationPicturesView;
     
     [animationPicturesView addSubview:animationPictures];
     
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    
+    label.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    label.numberOfLines = 0;
+    
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    if (self.textColor) {
+        
+        label.textColor = self.textColor;
+        
+    }else {
+        
+        label.textColor = [UIColor blackColor];
+        
+    }
+    
+    label.text = self.promptWords;
+    
+    if (self.font) {
+        
+        label.font = [UIFont systemFontOfSize:self.font];
+        
+    }else {
+        
+        label.font = [UIFont systemFontOfSize:23];
+        
+    }
+    
+    [label sizeToFit];
+    
+    [animationPicturesView addSubview:label];
+    
+    [animationPicturesView addConstraint:[NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:animationPictures attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0]];
+    
+    [animationPicturesView addConstraint:[NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:animationPictures attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+
+    
     [view addSubview:animationPicturesView];
 
     
@@ -523,6 +638,45 @@ UIView *animationPicturesView;
     [animationPictures dw_SetImage:imageURL];
     
     [animationPicturesView addSubview:animationPictures];
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    
+    label.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    label.numberOfLines = 0;
+    
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    if (self.textColor) {
+        
+        label.textColor = self.textColor;
+        
+    }else {
+        
+        label.textColor = [UIColor blackColor];
+        
+    }
+    
+    label.text = self.promptWords;
+    
+    if (self.font) {
+        
+        label.font = [UIFont systemFontOfSize:self.font];
+        
+    }else {
+        
+        label.font = [UIFont systemFontOfSize:23];
+        
+    }
+    
+    [label sizeToFit];
+    
+    [animationPicturesView addSubview:label];
+    
+    [animationPicturesView addConstraint:[NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:animationPictures attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0]];
+    
+    [animationPicturesView addConstraint:[NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:animationPictures attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+
     
     [view addSubview:animationPicturesView];
     

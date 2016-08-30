@@ -51,6 +51,15 @@ typedef enum : NSUInteger {
 /** 修改UIImageView默认Rect尺寸后，是否进行切圆 */
 @property (assign, nonatomic) BOOL clipsToBounds;
 
+/** 提示文字 */
+@property (copy, nonatomic) NSString *promptWords;
+
+/** 提示文字颜色 */
+@property (strong, nonatomic) UIColor *textColor;
+
+/** 提示文字字体大小 */
+@property (assign, nonatomic) CGFloat font;
+
 /**
  *  自定义序列帧动画／无法修改属性
  *
