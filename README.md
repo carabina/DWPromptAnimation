@@ -81,6 +81,16 @@
  	 */
 	- (void)dw_ShowPromptGIFAnimation:(UIView *)view GIFName:(NSString *)gifName;
 ---
+# 自定义显示文字
+	/** 提示文字 */
+	@property (copy, nonatomic) NSString *promptWords;
+
+	/** 提示文字颜色 */
+	@property (strong, nonatomic) UIColor *textColor;
+
+	/** 提示文字字体大小 */
+	@property (assign, nonatomic) CGFloat font;
+---
 #停止动画
 	/**
  	 *
