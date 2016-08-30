@@ -48,6 +48,8 @@ typedef enum : NSUInteger {
 /** 修改UIImageView默认Rect尺寸 */
 @property (assign, nonatomic) CGRect animationPicturesRect;
 
+/** 修改UIImageView默认Rect尺寸后，是否进行切圆 */
+@property (assign, nonatomic) BOOL clipsToBounds;
 
 /**
  *  自定义序列帧动画／无法修改属性

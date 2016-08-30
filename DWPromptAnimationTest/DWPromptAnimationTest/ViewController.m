@@ -135,6 +135,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    self.animation.animationPicturesRect = CGRectMake(self.view.center.x-self.view.frame.size.width/4, self.view.center.y-self.view.frame.size.width/4, self.view.frame.size.width/2, self.view.frame.size.width/2);
+    
+    self.animation.clipsToBounds = YES;
+    
     if (indexPath.row == 0) {
         
         self.animation.alpha = 0.8;
