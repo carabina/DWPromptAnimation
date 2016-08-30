@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DWPromptAnimation"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A library is suitable for loading waiting for."
   s.description      = <<-DESC
                        In the place such as network load, page data waiting for, the framework can be used.
