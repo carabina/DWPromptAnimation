@@ -243,6 +243,8 @@
         
         self.animation.animationPicturesRect = CGRectMake(0, self.view.frame.size.height - 100, self.view.frame.size.width, 150);
         
+        self.animation.clipsToBounds = NO;
+        
         [self.animation dw_ShowPromptGIFAnimation:self.view GIFName:@"CustomSources14.gif"];
         
     }
