@@ -9,10 +9,8 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "dwanghello" => "dwang.hello@outlook.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "hhttps://github.com/dwanghello/DWPromptAnimation.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/dwanghello/DWPromptAnimation.git", :tag => s.version.to_s }
   s.source_files  = "DWPromptAnimation", "DWPromptAnimationTest/DWPromptAnimation/**/*.{h,m}"
   s.frameworks = "UIKit", "Foundation","ImageIO"
-  s.resources    = "DWPromptAnimationTest/DWPromptAnimation/CustomSources","WPromptAnimationTest/DWPromptAnimation/SourcesGIF","DWPromptAnimationTest/DWPromptAnimation/CustomSources',"WPromptAnimationTest/DWPromptAnimation/SourcesSequence"
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
- 
+  s.resources    = "DWPromptAnimationTest/DWPromptAnimation/SourcesGIF", "DWPromptAnimationTest/DWPromptAnimation/CustomSources", "DWPromptAnimationTest/DWPromptAnimation/SourcesGIF", "DWPromptAnimationTest/DWPromptAnimation/SourcesSequence/Sources1","DWPromptAnimationTest/DWPromptAnimation/SourcesSequence/Sources2", "DWPromptAnimationTest/DWPromptAnimation/SourcesSequence/Sources3", "DWPromptAnimationTest/DWPromptAnimation/SourcesSequence/Sources4", "DWPromptAnimationTest/DWPromptAnimation/SourcesSequence/Sources5", "DWPromptAnimationTest/DWPromptAnimation/SourcesSequence/Sources6", "DWPromptAnimationTest/DWPromptAnimation/SourcesSequence/Sources7"
 end
